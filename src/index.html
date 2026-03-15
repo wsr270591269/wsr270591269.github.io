@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <title>王诗然的简历</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/snack.css">
+  <link rel="stylesheet" href="css/snack-helper.css">
+  <style>
+    html,
+    body {
+      background-color: #ffffff;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #fff;
+      font-size: 14px;
+    }
+
+    h1 {
+      margin: 20px -20px 20px;
+      padding-left: 15px;
+      border-left: 5px solid #F8B62D;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body class="">
+
+  <main class="page shadow-2">
+    <section>
+      <h1>联系方式</h1>
+      <div class="boxes">
+        <div class="box bg-gray-lightest p-y-0">
+          <div class="row g-32">
+            <div class="col-6 p-y-8 b-r-1">● 电话：15734005452</div>
+            <div class="col-6 p-y-8 b-r-1">● 邮箱：<a href="mailto:wangshiran2@gmail.com" class="text-gray-dark">wangshiran2@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>个人信息</h1>
+      <div class="boxes">
+        <div class="box bg-gray-lightest p-y-0">
+          <div class="row g-32">
+            <div class="col-6 p-y-8 b-r-1">● 王诗然 | 男 | 1995-08-22</div>
+            <div class="col-6 p-y-8 b-r-1">● 沈阳师范大学(2014-2018) | 软件工程 | 本科</div>
+          </div>
+        </div>
+        <div class="box bg-gray-lightest">
+          ● 技术博客：
+          <a href="https://blog.csdn.net/wsr270591269" target="_blank"
+             class="text-gray-dark">https://blog.csdn.net/wsr270591269</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>专业技能</h1>
+      <div class="boxes">
+        <div class="box bg-gray-lightest">
+          ● 熟悉 C++，了解java。
+        </div>
+		<div class="box bg-gray-lightest">
+          ● 了解Android Display Framework 架构、Java Framework -> Native -> HAL 层的跨层级开发与数据流转机制、DisplayEngine 的核心业务逻辑与功能通路搭建。
+        </div>
+		<div class="box bg-gray-lightest">
+          ● 了解 Android 显示渲染管线（SurfaceFlinger、HWC），了解底层显示驱动数据下发流程；对色彩科学理论（色域、Gamma、3DLUT、色温矩阵等）及主流显示技术（OLED/LCD）有基础了解，具备一定的显示算法（如 屏幕护眼策略等）系统级集成与工程化落地经验。
+        </div>
+        <div class="box bg-gray-lightest">
+          ● 熟悉 Git、SVN 等版本控制工具。
+        </div>
+      </div>
+    </section>
+
+    <section>
+		<h1>
+		工作经历
+		</h1>
+		<div class="boxes">
+			<div class="box bg-gray-lightest">
+			  ● <b>北京软通动力数字科技有限公司（外派驻场：北京荣耀）</b> （2023年5月 — 至今）
+			</div>
+			<div class="box bg-gray-lightest">
+				<p><b>职位：</b> Display Framework 开发工程师 / 驻场团队PL（显示触控指纹组）</p>
+				<p><b>业务背景：</b> 负责荣耀多款旗舰机、折叠屏、数字系列及 Robot Phone 的 MagicOS (8.0-10.0) 显示效果领域核心特性的开发与架构落地。</p>
+				</div>
+			<div class="box bg-gray-lightest">
+				<p><b>核心项目一：显示护眼特性（离焦视力舒缓 & 助眠显示 2.0）</b></p>
+				<p><b>项目描述： </b> 显示效果卖点特性“离焦视力舒缓”的系统级逻辑开发。该特性共迭代 6 套软硬协同方案，上线后用户使用率超 30%。</p>
+				<p><b>负责内容：</b></p>
+				<ol>
+					<li>负责打通 Java Framework -> Native -> HAL 层的全链路数据流转。在 Java 层统筹环境光、场景、窗口状态及用眼距离的逻辑判决，并完成灵动胶囊通知的弹出控制与 SQLite 数据状态存储。</li>
+					<li>在 Native 层解析配置，针对不同场景进行策略路由。根据当前场景及使用的方案，向不同领域（如SurfaceFlinger、MediaCodec、显示驱动等）传递生效参数</li>
+					<li>针对折叠屏形态上下电时序不可控导致的数据丢失痛点，在 HAL 层设计了无阻塞重发机制。利用 std::thread 配合 detach() 进行异步下发，并结合 std::atomic 原子变量实现线程生命周期的精准控制，在环境参数突变时能随时打断并更新下发参数。</li>
+				</ol>
+			</div>
+			<div class="box bg-gray-lightest">
+				<p><b>核心项目二：显示维测功能（黑花闪打点功能）</b></p>
+				<p><b>项目描述： </b> 针对线上用户偶现的黑屏、白屏、闪屏等瞬态显示异常，因缺乏精确时间戳导致 90% 以上日志无法有效分析的痛点，开发了黑花闪监控与上报功能。</p>
+				<p><b>负责内容：</b></p>
+				<ol>
+					<li>HAL 层基于连续 3 帧的硬件直方图数据进行分析；通过计算灰阶占比精准识别黑/白屏，并结合滤波算法及余弦相似度算法进行屏幕闪烁判决。实现对异常帧的毫秒级精准打点与日志上报。</li>
+					<li>功能上线后，将线上“黑花闪”显示异常的有效定位率跃升至 40%~50%，极大提升了研发团队的疑难问题排查效率。</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="boxes">
+			<div class="box bg-gray-lightest">
+			  ● <b>杭州游动寰宇</b> （2019年9月—2023年1月）
+			</div>
+			<div class="box bg-gray-lightest">
+				<p><b>职位：</b> 全栈开发工程师</p>
+				<p><b>负责内容：</b> 独立负责核心二次元社区（数万注册用户）的门户/论坛全流程开发与架构设计；掌握 LAMP 架构，主导用户模块重构及云服务器整体迁移技术方案的策划与实施。</p>
+			</div>
+		</div>
+
+		<div class="boxes">
+			<div class="box bg-gray-lightest">
+			 ● <b>北京金刚游戏</b> （2018年7月—2019年8月）
+			</div>
+			<div class="box bg-gray-lightest">
+				<p><b>职位：</b> UE4/C++客户端开发工程师</p>
+				<p><b>负责内容：</b> 参与 UE4 传奇类 3D 手游开发。负责基于 C++ 的底层游戏资源加载优化、角色 3D 模型渲染控制以及服务端数据传输处理。</p>
+			</div>
+		</div>
+
+    </section>
+	
+	<section>
+      <h1>技术文章</h1>
+      <div class="boxes">
+        <div class="box bg-gray-lightest">
+          ●
+          <a href="https://blog.csdn.net/wsr270591269/article/details/149307854" target="_blank"
+             class="text-gray-dark">《C++使用Thread实现子线程延时重发》</a>
+        </div>
+		<div class="box bg-gray-lightest">
+          ●
+          <a href="https://blog.csdn.net/wsr270591269/article/details/159046829" target="_blank"
+             class="text-gray-dark">《vector在不同场景下的最优声明与数据添加策略》</a>
+        </div>
+      </div>
+    </section>
+	
+  </main>
+
+
+</body>
+
+</html>
